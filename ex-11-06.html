@@ -10,9 +10,16 @@
 <body>
 <script>
     var sum = 0;
-    for ( var i = 1 ; i <= 30 ; i++){
-        document.write(i + " ")
-        sum = sum + i;
+    var count = 0;
+    for ( var i = 1 ; i <= 500 ; i++){
+        // document.write(i + " ")
+        if (i % 7 == 0) {
+            sum += i;
+            count++;
+        }
+        if(count === 30){
+            break;
+        }
     }
     document.write(sum)
 </script>
